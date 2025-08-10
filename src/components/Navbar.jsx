@@ -65,10 +65,10 @@ const Navbar = () => {
             </li>
             <li>
               <Link
-                to="/services"
+                to="/problems"
                 className="block py-2 px-3 text-gray-800 rounded-sm hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0 transition-colors duration-300 font-medium"
               >
-                Services
+                Problems
               </Link>
             </li>
             <li>

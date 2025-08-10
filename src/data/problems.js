@@ -1,7 +1,7 @@
 import GrumpyBookstore  from '../assets/GrumpyBookstore.png'
 import BandFest  from '../assets/Band Fest.png'
 import Binary  from '../assets/Binary.png'
-import restaurant from '../assets/restaurant.png'
+import Restudent from '../assets/Restudent.png'
 
 const problems = [
   {
@@ -194,7 +194,7 @@ function buildTree(arr, i = 0) {
 }
     `,
     explanation: "The veganFriendly filter will be either true (meaning you should only include restaurants with veganFriendlyi set to true) or false (meaning you can include any restaurant). In addition, you have the filters maxPrice and maxDistance which are the maximum value for price and distance of restaurants you should consider respectively.",
-    image: restaurant ,
+    image: Restudent ,
     leetcodeLink: "https://veganrestudent.netlify.app/",
     solutionExplanation: "Return the array of restaurant IDs after filtering, ordered by rating from highest to lowest. For restaurants with the same rating, order them by id from highest to lowest. For simplicity veganFriendlyi and veganFriendly take value 1 when it is true, and 0 when it is false."
   },
