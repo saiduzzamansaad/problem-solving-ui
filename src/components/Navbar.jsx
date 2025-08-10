@@ -8,7 +8,7 @@ const Navbar = () => {
   const toggleMenu = () => setIsOpen(prev => !prev);
 
   return (
-    <nav className="bg-white shadow-lg rounded-b-[50px] rounded-t-[50px] mx-[50px] mt-[50px] sticky top-0 z-50 border border-gray-100">
+    <nav className="bg-white  sticky top-0 z-50 border border-gray-100">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         {/* Logo and Title - Premium Styling */}
         <Link to="/" className="flex items-center space-x-3 rtl:space-x-reverse">
