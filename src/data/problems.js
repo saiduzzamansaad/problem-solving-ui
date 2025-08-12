@@ -2,7 +2,7 @@ import GrumpyBookstore  from '../assets/GrumpyBookstore.png'
 import BandFest  from '../assets/Band Fest.png'
 import Binary  from '../assets/Binary.png'
 import Restudent from '../assets/Restudent.png'
-
+import restudent1 from '../assets/restudent1.png'
 const problems = [
   {
     id: 1,
@@ -197,6 +197,56 @@ function buildTree(arr, i = 0) {
     image: Restudent ,
     leetcodeLink: "https://veganrestudent.netlify.app/",
     solutionExplanation: "Return the array of restaurant IDs after filtering, ordered by rating from highest to lowest. For restaurants with the same rating, order them by id from highest to lowest. For simplicity veganFriendlyi and veganFriendly take value 1 when it is true, and 0 when it is false."
+  },
+
+
+  {
+    id: 5,
+    title: "Restudent Discount",
+    description: "There is a supermarket that is frequented by many customers. The products sold at the supermarket are represented as two parallel integer arrays products and prices, where the ith product has an ID of products[i] and a price of prices[i].",
+    difficulty: "Medium",
+    tags: ["Tree", "Binary Tree"],
+    date: "2025-06-25",
+    solution: `
+        
+        class Cashier {
+    constructor(n, discount, products, prices) {
+        this.n = n;
+        this.discount = discount;
+        this.customerCount = 0;
+        this.productPrices = {};
+        
+        // Create a map of product IDs to prices for quick lookup
+        for (let i = 0; i < products.length; i++) {
+            this.productPrices[products[i]] = prices[i];
+        }
+    }
+
+    getBill(product, amount) {
+        this.customerCount++;
+        let subtotal = 0;
+        
+        // Calculate subtotal
+        for (let i = 0; i < product.length; i++) {
+            const productId = product[i];
+            const quantity = amount[i];
+            subtotal += this.productPrices[productId] * quantity;
+        }
+        
+        // Apply discount if it's the nth customer
+        let total = subtotal;
+        if (this.customerCount % this.n === 0) {
+            total = subtotal * (100 - this.discount) / 100;
+        }
+        
+        return total;
+    }
+}
+    `,
+    explanation: "When a customer is paying, their bill is represented as two parallel integer arrays product and amount, where the jth product they purchased has an ID of product[j], and amount[j] is how much of the product they bought. Their subtotal is calculated as the sum of each amount[j] * (price of the jth product).",
+    image: restudent1  ,
+    leetcodeLink: "https://restudent-discouut.netlify.app/",
+    solutionExplanation: "The supermarket decided to have a sale. Every nth customer paying for their groceries will be given a percentage discount. The discount amount is given by discount, where they will be given discount percent off their subtotal. More formally, if their subtotal is bill, then they would actually pay bill * ((100 - discount) / 100)."
   },
 
   // ... (other problems with the same structure)
