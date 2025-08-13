@@ -3,6 +3,9 @@ import BandFest  from '../assets/Band Fest.png'
 import Binary  from '../assets/Binary.png'
 import Restudent from '../assets/Restudent.png'
 import restudent1 from '../assets/restudent1.png'
+import Gold from '../assets/Gold.png'
+
+
 const problems = [
   {
     id: 1,
@@ -206,7 +209,7 @@ function buildTree(arr, i = 0) {
     description: "There is a supermarket that is frequented by many customers. The products sold at the supermarket are represented as two parallel integer arrays products and prices, where the ith product has an ID of products[i] and a price of prices[i].",
     difficulty: "Medium",
     tags: ["Tree", "Binary Tree"],
-    date: "2025-06-25",
+    date: "2025-06-26",
     solution: `
         
         class Cashier {
@@ -247,6 +250,59 @@ function buildTree(arr, i = 0) {
     image: restudent1  ,
     leetcodeLink: "https://restudent-discouut.netlify.app/",
     solutionExplanation: "The supermarket decided to have a sale. Every nth customer paying for their groceries will be given a percentage discount. The discount amount is given by discount, where they will be given discount percent off their subtotal. More formally, if their subtotal is bill, then they would actually pay bill * ((100 - discount) / 100)."
+  },
+
+
+  {
+    id: 6,
+    title: "Gold Miner 2025",
+    description: "Discover the richest path in the mine and collect maximum gold",
+    difficulty: "Medium",
+    tags: ["Tree", "Binary Tree"],
+    date: "2025-06-27",
+    solution: `
+        function getMaximumGold(grid) {
+    let maxGold = 0;
+    const m = grid.length;
+    const n = grid[0].length;
+    
+    const directions = [[-1, 0], [1, 0], [0, -1], [0, 1]];
+    
+    function backtrack(i, j, currentGold) {
+        if (i < 0 || i >= m || j < 0 || j >= n || grid[i][j] === 0) {
+            return;
+        }
+        
+        const goldInCell = grid[i][j];
+        currentGold += goldInCell;
+        maxGold = Math.max(maxGold, currentGold);
+        
+        const temp = grid[i][j];
+        grid[i][j] = 0; // Mark as visited
+        
+        for (const [di, dj] of directions) {
+            backtrack(i + di, j + dj, currentGold);
+        }
+        
+        grid[i][j] = temp; // Backtrack
+    }
+    
+    for (let i = 0; i < m; i++) {
+        for (let j = 0; j < n; j++) {
+            if (grid[i][j] !== 0) {
+                backtrack(i, j, 0);
+            }
+        }
+    }
+    
+    return maxGold;
+}
+        
+    `,
+    explanation: "In a gold mine grid of size m x n, each cell in this mine has an integer representing the amount of gold in that cell, 0 if it is empty.",
+    image: Gold,
+    leetcodeLink: "https://gold-miner-2025.netlify.app/",
+    solutionExplanation: " The mine is represented as a grid where each cell contains gold (positive number) or is empty (0).Your goal is to find a path that collects the maximum amount of gold."
   },
 
   // ... (other problems with the same structure)
