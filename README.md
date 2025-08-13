@@ -1,35 +1,64 @@
-# Problem Solving UI - React Application
+# Problem Solver UI - React Application
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![React](https://img.shields.io/badge/React-18.2.0-blue)](https://reactjs.org/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.0.0-blue)](https://www.typescriptlang.org/)
-[![CI/CD](https://github.com/yourusername/problem-solving-ui/actions/workflows/main.yml/badge.svg)](https://github.com/yourusername/problem-solving-ui/actions)
+[![React Version](https://img.shields.io/badge/React-18.2.0-blue)](https://reactjs.org/)
+[![TypeScript Version](https://img.shields.io/badge/TypeScript-5.0.0-blue)](https://www.typescriptlang.org/)
+[![Build Status](https://github.com/yourusername/problem-solver-ui/actions/workflows/main.yml/badge.svg)](https://github.com/yourusername/problem-solver-ui/actions)
+[![Code Coverage](https://coveralls.io/repos/github/saiduzzamansaad/problem-solver-ui/badge.svg?branch=main)](https://coveralls.io/github/saiduzzamansaad/problem-solver-ui?branch=main)
+[![Code Style: Prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 
-A professional, responsive UI for problem-solving built with React. This application provides an intuitive interface for visualizing and solving complex problems with interactive components.
+A professional-grade problem-solving interface built with React that provides intuitive tools for analyzing, visualizing, and solving complex problems.
 
-![Project Screenshot](./public/screenshot.png)
+![App Screenshot](./public/images/app-screenshot.png)
+
+## Table of Contents
+
+- [Features](#features)
+- [Demo](#demo)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Tech Stack](#tech-stack)
+- [Project Structure](#project-structure)
+- [API Documentation](#api-documentation)
+- [Testing](#testing)
+- [Deployment](#deployment)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
 ## Features
 
-- **Interactive Problem Visualization**: Dynamic components to represent problems visually
-- **Step-by-Step Solution**: Breakdown solutions into understandable steps
-- **Responsive Design**: Works on desktop, tablet, and mobile devices
-- **Customizable Interface**: Adjust UI to match different problem types
-- **Real-time Feedback**: Get immediate visual feedback on your solutions
-- **Dark/Light Mode**: Toggle between color schemes for better readability
+### Core Functionality
+- Interactive problem modeling canvas
+- Step-by-step solution visualization
+- Multiple problem representation formats (flowcharts, matrices, graphs)
+- Real-time collaboration (optional)
 
-## Technologies Used
+### UI/UX Highlights
+- Responsive design with mobile-first approach
+- Dark/light mode theming
+- Keyboard shortcuts for power users
+- Accessible components (WCAG 2.1 compliant)
+- Customizable workspace layouts
 
-- React 18 (Functional Components with Hooks)
-- TypeScript for type safety
-- Styled Components or Tailwind CSS for styling
-- React Router for navigation
-- Redux Toolkit or Context API for state management
-- Jest & React Testing Library for unit testing
-- Framer Motion for animations
+### Advanced Capabilities
+- Solution validation and verification
+- Performance benchmarking
+- Export solutions in multiple formats (PDF, PNG, JSON)
+- Version history and snapshots
+
+## Demo
+
+Try the live demo: [[https://problemsolver.app](https://problemsolver.app)](https://problem-solving-ui.vercel.app/)
+
+
 
 ## Installation
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/problem-solving-ui.git
+### Prerequisites
+- Node.js v18+
+- npm v9+ or yarn v1.22+
+- Git
+
+
+   
