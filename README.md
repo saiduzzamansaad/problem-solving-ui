@@ -1,12 +1,35 @@
-# React + Vite
+# Problem Solving UI - React Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![React](https://img.shields.io/badge/React-18.2.0-blue)](https://reactjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.0.0-blue)](https://www.typescriptlang.org/)
+[![CI/CD](https://github.com/yourusername/problem-solving-ui/actions/workflows/main.yml/badge.svg)](https://github.com/yourusername/problem-solving-ui/actions)
 
-Currently, two official plugins are available:
+A professional, responsive UI for problem-solving built with React. This application provides an intuitive interface for visualizing and solving complex problems with interactive components.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![Project Screenshot](./public/screenshot.png)
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Interactive Problem Visualization**: Dynamic components to represent problems visually
+- **Step-by-Step Solution**: Breakdown solutions into understandable steps
+- **Responsive Design**: Works on desktop, tablet, and mobile devices
+- **Customizable Interface**: Adjust UI to match different problem types
+- **Real-time Feedback**: Get immediate visual feedback on your solutions
+- **Dark/Light Mode**: Toggle between color schemes for better readability
+
+## Technologies Used
+
+- React 18 (Functional Components with Hooks)
+- TypeScript for type safety
+- Styled Components or Tailwind CSS for styling
+- React Router for navigation
+- Redux Toolkit or Context API for state management
+- Jest & React Testing Library for unit testing
+- Framer Motion for animations
+
+## Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/problem-solving-ui.git
