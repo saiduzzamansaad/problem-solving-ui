@@ -9,7 +9,6 @@
 
 A professional-grade problem-solving interface built with React that provides intuitive tools for analyzing, visualizing, and solving complex problems.
 
-![App Screenshot](./public/images/restudent.png)
 
 ## Table of Contents
 
