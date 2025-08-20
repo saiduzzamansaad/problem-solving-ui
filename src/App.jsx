@@ -7,6 +7,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Myinfo from './pages/Myinfo';
 import Pricing from './pages/Pricing';
+import ContactUs from './pages/ContactUs';
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/myinfo" element={<Myinfo />} />
             <Route path="/pricing" element={<Pricing />} />
+            <Route path="/contact" element={<ContactUs />} />
           </Routes>
         </div>
         <Footer />

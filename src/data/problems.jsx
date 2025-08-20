@@ -5,6 +5,7 @@ import Restudent from '../assets/Restudent.png'
 import restudent1 from '../assets/restudent1.png'
 import Gold from '../assets/Gold.png'
 import Attendance from '../assets/Attendance.png'
+import Bank from '../assets/Bank.png'
 
 
 
@@ -362,6 +363,30 @@ function buildTree(arr, i = 0) {
     image: Attendance,
     leetcodeLink: "https://monumental-vacherin-c1cb66.netlify.app/",
     solutionExplanation: ""
+
+  // ... (other problems with the same structure)
+},
+
+{
+    id: 8,
+    title: "Advanced Account Balance Calculator",
+    description: "Calculate your balance after rounding your purchase to the nearest $10 with our interactive tool",
+    difficulty: "Medium",
+    tags: ["Tree", "Binary Tree"],
+    date: "2025-06-29",
+    solution: `
+       var accountBalanceAfterPurchase = function(purchaseAmount) {
+    let rem = purchaseAmount % 10;
+    let roundedAmount = (rem < 5) 
+        ? purchaseAmount - rem 
+        : purchaseAmount + (10 - rem);
+    return 100 - roundedAmount;
+    };
+      `,
+    explanation: "You are given an integer purchaseAmount representing the amount you will spend on a purchase in dollars, in other words, its price.",
+    image: Bank,
+    leetcodeLink: "https://bank-balance-usd.netlify.app/",
+    solutionExplanation: "0 is considered to be a multiple of 10 in this problem.When rounding, 5 is rounded upward (5 is rounded to 10, 15 is rounded to 20, 25 to 30, and so on)."
 
   // ... (other problems with the same structure)
 }
