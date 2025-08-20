@@ -1,15 +1,17 @@
 {
-      "version": 1,
-      "builds": [
+      "$schema": "https://openapi.vercel.sh/vercel.json",
+      "crons": [
         {
-          "src": "package.json",
-          "use": "@vercel/static-build",
-          "config": { "distDir": "dist" }
+          "path": "/api/every-minute",
+          "schedule": "* * * * *"
+        },
+        {
+          "path": "/api/every-hour",
+          "schedule": "0 * * * *"
+        },
+        {
+          "path": "/api/every-day",
+          "schedule": "0 0 * * *"
         }
-      ],
-      "routes": [
-        { "src": "/(.*)", "dest": "/index.html" }
       ]
     }
-    
- 
